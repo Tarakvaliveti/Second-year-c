@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void main() {
+    int a,b,c;
+    printf("Enter any nums:");
+    scanf("%d%d%d",&a,&b,&c);
+    if (a>b && a>c)
+    {
+        if (b>c)
+          printf("%d is second largest num",b);
+        else
+          printf("%d is second largest num",c);
+    }
+    else if (b>a && b>c)
+    {
+        if (a>c)
+          printf("%d is second largest num",a);
+        else
+          printf("%d is second largest num",c);
+    }
+    else 
+    {
+        if (a>b)
+          printf("%d is second largest num",a);
+        else
+          printf("%d is second largest num",b);
+    }
+         
+}
